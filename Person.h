@@ -2,13 +2,33 @@
 // Created by johne on 16/8/2020.
 //
 
-#ifndef BASIC_00_EXAMPLE_PERSON_H
-#define BASIC_00_EXAMPLE_PERSON_H
-
+#ifndef LAB03_OPP_PERSON_H
+#define LAB03_OPP_PERSON_H
+#include <string>
+#include <ostream>
+#include <sstream>
+using namespace std;
 
 class Person {
+public:
+    Person();
+    Person(string,string,int);
+    virtual ~Person();
+    string getfirstName();
+    void setFirstName(string);
+    string getlastName();
+    void setLastName(string);
+    int getdocumentID();
+    void setDocumentId(int);
+    virtual string toString() const;
+    virtual double salary() const;
 
+protected:
+
+    string firstName;
+    string lastName;
+    int documentId;
 };
 
 
-#endif //BASIC_00_EXAMPLE_PERSON_H
+#endif //LAB03_OPP_PERSON_H
