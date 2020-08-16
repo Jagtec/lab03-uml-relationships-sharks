@@ -20,6 +20,8 @@ public:
     void setLastName(string);
     int getdocumentID();
     void setDocumentId(int);
+    int getAge();
+    void setAge(int age);
     virtual string toString() const;
     virtual double salary() const;
 
@@ -28,6 +30,9 @@ protected:
     string firstName;
     string lastName;
     int documentId;
+    int age;
+
+
 };
 
 

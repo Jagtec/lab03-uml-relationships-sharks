@@ -10,7 +10,7 @@ class Professor: public Person{
 public:
     Professor();
     Professor(double, double);
-    Professor(string,string,int,double, double);
+    Professor(string,string,int,int,double, double);
     virtual ~Professor();
     double getmonthlySalary();
     double getcommissionRate();

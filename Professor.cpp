@@ -16,7 +16,7 @@ Professor::Professor(double monthlySalary ,double commissionRate){
     this->commissionRate = commissionRate;
 }
 
-Professor::Professor(string firstName, string lastName, int documentId, double monthlySalary, double commissionRate) :Person(firstName, lastName, documentId){
+Professor::Professor(string firstName, string lastName, int documentId, int age, double monthlySalary, double commissionRate) :Person(firstName, lastName, documentId, age){
     this->monthlySalary = monthlySalary;
     this->commissionRate = commissionRate;
 }
